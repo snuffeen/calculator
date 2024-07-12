@@ -7,26 +7,27 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <div class="display"></div>
+    <div class="calculator">
+        <input class="display" readonly></input>
         <div class="numbers">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>0</div>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
         </div>
         <div class="operators">
-            <div class="addSign">+</div>
-            <div class="subtractSign">-</div>
-            <div class="multiplySign">*</div>
-            <div class="divideSign">%</div>
-            <div class="equalSign">=</div>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('=')">=</button>
         </div>
     </div>
 </body>
