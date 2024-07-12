@@ -1,16 +1,13 @@
-function add(a, b) {
-    return a+b
-}
-function subtract(a, b){
-    return a-b
-}
-function multiply(a, b){
-    return a*b
-}
-function divide(a, b){
-    return a/b
+const display = document.querySelector(".display")
+
+function appendToDisplay(input) {
+    display.value += input
 }
 
-function operate(operator, first, second){
-    return operator(first, second)
+function operate() {
+    
+}
+
+function clearDisplay() {
+    display.value = ""
 }
